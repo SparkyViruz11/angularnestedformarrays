@@ -131,5 +131,8 @@
       }
     }
   },
-  "defaultProject": "ng-reactivefrm"
+  "defaultProject": "ng-reactivefrm",
+  "cli": {
+    "analytics": "78c17fa7-0878-44b8-871f-e1f0c3769a53"
+  }
 }

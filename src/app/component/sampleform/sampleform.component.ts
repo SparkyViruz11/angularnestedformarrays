@@ -18,8 +18,8 @@ export class SampleformComponent implements OnInit {
   ngOnInit() {
     this.leagueForm = this.fb.group({
       league_details: this.fb.group({
-        name: "",
-        founder: ""
+        name: '',
+        founder: ''
       }),
       teams: this.fb.array([this.teams])
     });
@@ -34,17 +34,17 @@ export class SampleformComponent implements OnInit {
 
   get players(): FormGroup {
     return this.fb.group({
-      player_name: "",
-      player_number: ""
+      player_name: '',
+      player_number: '',
     });
   }
 
   addTeam() {
-    (this.leagueForm.get("teams") as FormArray).push(this.teams);
+    (this.leagueForm.get('teams') as FormArray).push(this.teams);
   }
 
   deleteTeam(index) {
-    (this.leagueForm.get("teams") as FormArray).removeAt(index);
+    (this.leagueForm.get('teams') as FormArray).removeAt(index);
   }
 
   addPlayer(team) {
